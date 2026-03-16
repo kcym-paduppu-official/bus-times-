@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ml">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>KCYM പടുപ്പ് യൂണിറ്റ് | ബസ് സമയക്രമം</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>കെ.സി.വൈ.എം പടുപ്പ് യൂണിറ്റ് 2025-26</h1>
+
+<h2>ബസ് സമയക്രമം</h2>
+
+<div class="busAnimation">🚌</div>
+
+</header>
+
+
+<div class="controls">
+
+<input type="text" id="search" placeholder="Bus / Route search...">
+
+<button onclick="filterCategory('all')">എല്ലാം</button>
+
+<button onclick="filterCategory('kasaragod')">കാസർഗോഡ്</button>
+
+<button onclick="filterCategory('kanhangad')">കാഞ്ഞങ്ങാട്</button>
+
+<button onclick="filterCategory('long')">ദീർഘദൂര</button>
+
+<button onclick="toggleMode()">🌙 / ☀</button>
+
+</div>
+
+
+<div class="nextBus">
+
+Next Bus: <span id="nextBus"></span>
+
+</div>
+
+
+<table id="busTable">
+
+<thead>
+
+<tr>
+
+<th>സമയം</th>
+
+<th>ബസ്</th>
+
+<th>റൂട്ട്</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="busBody">
+
+<tr data-category="kanhangad">
+<td>4:30 AM</td>
+<td class="bus">KSRTC</td>
+<td class="route">ചുള്ളിക്കര - കാഞ്ഞങ്ങാട്</td>
+</tr>
+
+<tr data-category="kasaragod">
+<td>5:15 AM</td>
+<td class="bus">KSRTC</td>
+<td class="route">പൊയിനാച്ചി - കാസർഗോഡ്</td>
+</tr>
+
+<tr data-category="long">
+<td>6:10 AM</td>
+<td class="bus">KSRTC</td>
+<td class="route">മാലക്കല്ല് - മാനന്തവാടി</td>
+</tr>
+
+<tr data-category="long">
+<td>7:18 AM</td>
+<td class="bus">ST MARYS</td>
+<td class="route">മാലക്കല്ല് - ഇരിട്ടി</td>
+</tr>
+
+<tr data-category="kanhangad">
+<td>7:35 AM</td>
+<td class="bus">AKSHAYA</td>
+<td class="route">പൊയിനാച്ചി - കാഞ്ഞങ്ങാട്</td>
+</tr>
+
+<tr data-category="kasaragod">
+<td>8:00 AM</td>
+<td class="bus">SHUKRIYA</td>
+<td class="route">പൊയിനാച്ചി - കാസർഗോഡ്</td>
+</tr>
+
+<tr data-category="long">
+<td>6:15 PM</td>
+<td class="bus">KSRTC</td>
+<td class="route">അങ്കമാലി - പാലാ</td>
+</tr>
+
+</tbody>
+
+</table>
+
+
+<footer>
+
+<p>KCYM Paduppu Unit</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+  </html>
